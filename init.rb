@@ -1,5 +1,8 @@
 require 'yaml'
 require File.join('.', 'lib', 'm5ecompact.rb')
+require File.join('.', 'lib', 'crc16.rb')
+
+include Crc16
 
 settings = YAML::load(File.open('settings.yaml'))
 
